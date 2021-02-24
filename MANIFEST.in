@@ -1,0 +1,6 @@
+include README.md
+include postcss_modules/static/postcss-modules-v8-polyfill.js
+include postcss_modules/static/npm/postcss-modules-standalone@1.0.1/index.bundle.min.js
+include postcss_modules/static/postcss-modules-setup.js
+global-exclude __pycache__
+global-exclude *.py[co]
