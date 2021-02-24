@@ -19,7 +19,7 @@ def transpiling_block(parser, token):
     nodelist = parser.parse(('endpostcssmodules',))
     parser.delete_first_token()
     return TranspilingNode(nodelist, options=options,
-                           path=f'{parser.origin.name}.{token.lineno}_{token.position[0]}.cssm')
+                           path=f'{parser.origin.name}.{token.lineno}.cssm')
 
 
 class TranspilingNode(template.Node):
